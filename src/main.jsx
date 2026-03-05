@@ -8,6 +8,7 @@ import BlogList from './pages/BlogList'
 import BlogDetail from './pages/BlogDetail'
 import About from './pages/About'
 import Photography from './pages/Photography'
+import ProjectDetail from './pages/ProjectDetail'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="blog/:slug" element={<BlogDetail />} />
           <Route path="about" element={<About />} />
           <Route path="photography" element={<Photography />} />
+          <Route path=":slug" element={<ProjectDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>

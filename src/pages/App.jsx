@@ -11,22 +11,23 @@ export default function App() {
   }, [location.pathname])
 
   const navLinks = [
-    { to: '/#work', label: 'Work' },
+    { to: '/#work', label: 'Work', isHash: true },
     { to: '/blog', label: 'Blog' },
+    { to: '/photography', label: 'Photos' },
     { to: '/about', label: 'About' },
   ]
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-dvh flex flex-col">
       {/* ── Navigation ── */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-sm">
+      <header className="fixed top-0 left-0 right-0 z-nav bg-surface/80 backdrop-blur-sm">
         <nav className="max-w-content mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
               src="/images/icon.png"
               alt="Zirui Zhao"
-              className="w-9 h-9 rounded-full object-cover ring-2 ring-transparent group-hover:ring-gray-300 transition-all"
+              className="size-9 rounded-full object-cover ring-2 ring-transparent group-hover:ring-gray-300 transition-all ease-out"
             />
             <span className="font-mono text-sm font-medium tracking-wide text-text-primary">
               Zirui Zhao
@@ -35,19 +36,22 @@ export default function App() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-10">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.to}
-                to={link.to}
-                className={({ isActive }) =>
-                  `font-mono text-sm tracking-wide transition-colors hover:text-text-primary ${
-                    isActive ? 'text-text-primary' : 'text-text-muted'
-                  }`
-                }
-              >
-                {link.label}
-              </NavLink>
-            ))}
+            {navLinks.map((link) => {
+              const isWorkActive = link.isHash && location.pathname === '/';
+              return (
+                <NavLink
+                  key={link.to}
+                  to={link.to}
+                  className={({ isActive }) =>
+                    `text-sm font-medium transition-colors ease-out hover:text-text-primary ${
+                      isActive || isWorkActive ? 'text-text-primary' : 'text-text-muted'
+                    }`
+                  }
+                >
+                  {link.label}
+                </NavLink>
+              );
+            })}
           </div>
 
           {/* Mobile Hamburger */}
@@ -69,7 +73,7 @@ export default function App() {
               <NavLink
                 key={link.to}
                 to={link.to}
-                className="block py-3 font-mono text-sm tracking-wide text-text-muted hover:text-text-primary transition-colors"
+                className="block py-3 text-sm font-medium text-text-muted hover:text-text-primary transition-colors ease-out"
               >
                 {link.label}
               </NavLink>

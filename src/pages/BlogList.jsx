@@ -15,7 +15,7 @@ export default function BlogList() {
     <div className="max-w-content mx-auto px-6 md:px-10 pt-12 md:pt-20 pb-20">
       {/* Header */}
       <div className="text-center mb-16">
-        <h1 className="font-serif italic text-5xl md:text-7xl font-bold text-text-primary mb-4">
+        <h1 className="font-serif italic text-5xl md:text-7xl font-bold text-text-primary mb-4 text-balance">
           Blog
         </h1>
         <p className="font-sans text-text-muted text-sm md:text-base">
@@ -32,11 +32,11 @@ export default function BlogList() {
             className="group block"
           >
             {/* Cover Image */}
-            <div className="overflow-hidden rounded-2xl mb-4">
+            <div className="overflow-hidden rounded-3xl mb-4">
               <img
                 src={post.cover}
                 alt={post.title}
-                className="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                className="w-full aspect-[4/3] object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-[1.03]"
                 loading="lazy"
               />
             </div>

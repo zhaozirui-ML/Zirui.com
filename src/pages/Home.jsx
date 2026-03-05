@@ -7,21 +7,21 @@ const projects = [
     company: 'SmartX Corp.',
     title: 'SMTX ELF Virtualization',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80',
-    color: 'from-slate-100 to-slate-200',
+    bg: 'bg-slate-100',
   },
   {
     slug: 'vm-optimization',
     company: 'SmartX Corp.',
     title: 'VM Features Optimization',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80',
-    color: 'from-blue-50 to-indigo-100',
+    bg: 'bg-blue-50',
   },
   {
     slug: 'design-system',
     company: 'SmartX Corp.',
     title: 'CloudTower  Design System',
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&q=80',
-    color: 'from-sky-50 to-blue-100',
+    bg: 'bg-sky-50',
   },
 ]
 
@@ -51,12 +51,12 @@ function ProjectCard({ project, index }) {
       className={`group block opacity-0 translate-y-8 transition-all duration-700`}
       style={{ transitionDelay: `${index * 120}ms` }}
     >
-      <div className={`relative overflow-hidden rounded-3xl bg-gradient-to-br ${project.color}`}>
+      <div className={`relative overflow-hidden rounded-3xl ${project.bg}`}>
         <div className="aspect-[16/10] overflow-hidden">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            className="w-full h-full object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-[1.03]"
             loading="lazy"
           />
         </div>
@@ -77,14 +77,14 @@ export default function Home() {
   return (
     <div>
       {/* ── Hero ── */}
-      <section className="max-w-content mx-auto px-6 md:px-10 pt-16 md:pt-28 pb-20 md:pb-32">
-        <p className="font-mono text-xs tracking-[0.3em] uppercase text-text-muted mb-6">
+      <section className="max-w-content mx-auto px-6 md:px-10 pt-16 md:pt-28 pb-12 md:pb-16">
+        <p className="font-mono text-xs tracking-widest uppercase text-text-muted mb-6">
           Product Design
         </p>
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-text-primary leading-[1.1] mb-6">
+        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-text-primary leading-[1.1] mb-6 text-balance">
           Hey ！
         </h1>
-        <p className="text-lg md:text-xl text-text-muted max-w-xl leading-relaxed mb-10">
+        <p className="text-lg md:text-xl text-text-muted max-w-xl leading-relaxed mb-10 text-pretty">
           I'm Zirui Zhao, a digital product designer.
         </p>
         <a
@@ -105,6 +105,9 @@ export default function Home() {
 
       {/* ── Work Section ── */}
       <section id="work" className="max-w-content mx-auto px-6 md:px-10 pb-20 md:pb-32">
+        <p className="font-mono text-xs tracking-widest uppercase text-text-muted mb-10">
+          Selected Work
+        </p>
         <div className="grid gap-12 md:gap-16">
           {projects.map((p, i) => (
             <ProjectCard key={p.slug} project={p} index={i} />

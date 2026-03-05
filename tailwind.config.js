@@ -23,6 +23,10 @@ export default {
         content: '1200px',
         article: '720px',
       },
+      zIndex: {
+        nav: '100',
+        lightbox: '200',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],

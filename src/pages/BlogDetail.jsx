@@ -38,7 +38,7 @@ export default function BlogDetail() {
       </Link>
 
       {/* Title */}
-      <h1 className="font-serif text-3xl md:text-5xl font-bold text-text-primary text-center mb-4 leading-tight">
+      <h1 className="font-serif text-3xl md:text-5xl font-bold text-text-primary text-center mb-4 leading-tight text-balance">
         {post.title}
       </h1>
 
@@ -48,7 +48,7 @@ export default function BlogDetail() {
       </p>
 
       {/* Cover */}
-      <div className="overflow-hidden rounded-2xl mb-12">
+      <div className="overflow-hidden rounded-3xl mb-12">
         <img
           src={post.cover}
           alt={post.title}
