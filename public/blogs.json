@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "minimalist-todos",
+    "title": "简约 Todos",
+    "category": "GUIDE",
+    "date": "2025年10月23日",
+    "cover": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80",
+    "content_zh": "<h2>传统 Todos 的问题</h2><p>传统的待办事项列表大多是对他人优先级的反应，而不是自己的优先级。</p><ol><li>传统的待办事项列表大多是对他人优先级的反应，而不是自己的优先级。</li><li>完成任务后虽然会感到短暂的成就感，但更多的任务总是会接踵而来，让人感觉永远做不完。</li><li>待办事项列表会加剧生活中的未完成感。</li></ol><p>相应的，它的好处是</p><ol><li>帮助人们将事情记录下来，避免所有事情都堆积在大脑中，从而减轻压力。</li><li>它可以将所有任务集中在一个地方，方便查看。</li></ol><h2>Burner List 系统</h2><p>这是一个极其简单的纸质待办事项列表，强迫自己优先处理最重要的任务。它不是完美的，不会跟踪每一个细节，也无法同时处理多个项目。但正是这种局限性使得它更加专注。</p>",
+    "content_en": "<h2>Problems with Traditional Todos</h2><p>Traditional to-do lists are mostly reactions to other people's priorities, not your own.</p>"
+  },
+  {
+    "slug": "hammer-and-nail",
+    "title": "锤子与钉子",
+    "category": "GUIDE",
+    "date": "2022年4月20日",
+    "cover": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    "content_zh": "<p>当你手里有一把锤子的时候，看什么都像钉子。这是一种常见的认知偏差，在设计领域尤为明显——当我们过度依赖某种工具或方法时，往往会忽略问题的本质。</p><p>好的设计师需要跳出工具的限制，回归到用户需求和问题本身。</p>",
+    "content_en": "<p>When you have a hammer, everything looks like a nail. This cognitive bias is particularly evident in design.</p>"
+  },
+  {
+    "slug": "how-to-communicate-in-workspace",
+    "title": "沟通的方法",
+    "category": "GUIDE",
+    "date": "2023年2月10日",
+    "cover": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    "content_zh": "<p>在工作中，沟通是最重要的技能之一。有效的沟通不仅可以提高工作效率，还能减少误解和冲突。</p><p>好的沟通需要做到：清晰表达目标、主动倾听、建立信任关系、适时反馈。</p>",
+    "content_en": "<p>Communication is one of the most important skills in the workplace. Effective communication not only improves efficiency but also reduces misunderstandings.</p>"
+  },
+  {
+    "slug": "design-process",
+    "title": "SmartX 的设计工作流程",
+    "category": "DESIGN",
+    "date": "2023年6月28日",
+    "cover": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&q=80",
+    "content_zh": "<p>在 SmartX，设计流程从需求理解开始，经过用户研究、竞品分析、信息架构设计、交互设计、视觉输出、开发协作到最终的验收与迭代。</p><p>每个环节都强调与工程团队的紧密配合，确保设计方案的可实现性。</p>",
+    "content_en": "<p>At SmartX, the design process begins with understanding requirements, through user research, competitive analysis, and the full cycle of design-to-development collaboration.</p>"
+  },
+  {
+    "slug": "design-concept",
+    "title": "设计中的目标、活动、任务、行为",
+    "category": "GUIDE",
+    "date": "2023年8月8日",
+    "cover": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
+    "content_zh": "<p>在交互设计中，理解用户的目标层级至关重要。目标（Goal）驱动着活动（Activity），活动分解为任务（Task），任务最终体现为行为（Action）。</p><p>好的设计应该在每个层级上都能帮助用户更高效地完成其意图。</p>",
+    "content_en": "<p>In interaction design, understanding the hierarchy of user goals is crucial. Goals drive activities, activities decompose into tasks, and tasks manifest as actions.</p>"
+  },
+  {
+    "slug": "obsidian-from-joyfulness-to-waking-up",
+    "title": "Obsidian：从满心欢喜到梦醒时分",
+    "category": "TOOLS",
+    "date": "2024年1月15日",
+    "cover": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80",
+    "content_zh": "<p>Obsidian 是一款基于本地文件的笔记软件，以其强大的双向链接和插件生态吸引了大量用户。然而在深度使用后，我开始反思：工具的复杂性是否真的在帮助我思考？</p><p>有时候，简单才是最好的。</p>",
+    "content_en": "<p>Obsidian is a local-file-based note-taking app that attracted many users with its powerful bi-directional linking. Yet after deep use, I began to question: does tool complexity actually help us think?</p>"
+  },
+  {
+    "slug": "to-be-continue",
+    "title": "To be Continue",
+    "category": "GUIDE",
+    "date": "2024年6月22日",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    "content_zh": "<p>这是一篇未完待续的文章，记录着设计旅程中的所思所想。持续更新中……</p>",
+    "content_en": "<p>To be continued. Recording thoughts along the design journey...</p>"
+  }
+]
